@@ -1,0 +1,325 @@
+(1) Different types of operators in Dart:
+The following are the various types of operators in Dart:
+
+Arithmetic Operators
+Relational Operators
+Type Test Operators
+Bitwise Operators
+Assignment Operators
+Logical Operators
+
+
+void main (){
+var a = 3;
+var b = 5;
+var c = a + b;
+  print("The sum of a and b is $c");
+ 
+var d = a - b;
+  print("The substraction of a and b is $d");
+  
+var e = a * b;
+  print("The multiplication of a and b is $e");
+  
+var f = a / b;
+  print ("The division of a and b is $f");
+  
+var g = b ~/ a;  
+  print("The quotient of a and b is $g");
+  
+var h = b % a;
+  print("The reminder of a and b is $h");
+  
+if(a > b){
+    print("true");
+  }else
+    print("false");
+  
+  if(a < b){
+    print("true");
+  }else
+    print("false");
+  
+  if(a >= b){
+    print("a is graeter than b");
+  }else
+    print("not greater than");
+  
+  if(a <= b){
+    print("a is less than b");
+  }else
+    print("not less than");
+  
+  if(a == b){
+    print("a is equal to b");
+  }else
+    print("not equal");
+  
+  if(a != b){
+    print("a is not equal to b");
+  }else
+    print("equal to b");
+
+var name = "Ahmed";
+  var age = 21;
+  print(name is String);
+  
+  print(age is! int);
+
+int i = 8;
+  int j = 12;
+  var k = i & j;
+  print(k);
+  
+ var l = i | j;
+ print(l);
+  
+  var m = i ^ j;
+  print(m);
+  
+  var n = ~i;
+  print(n);
+  
+  var p = i << j;
+  print(p);
+  
+  var q = i >> j;
+  print(q);
+
+int r = 5;
+   int  s = 7;
+  var t = r * s;
+  print(t);
+
+int u = 15;
+  int v = 20;
+  bool w = u < 12 && v > 12;
+  print(w);
+  
+  bool x = u < 12 || v > 12;
+  print(x);
+  
+  bool y = !(v > 12);
+  print(y);
+  }
+
+(2) 
+void main(){
+var a = 2, b = 1;
+  var result = --a - --b + ++b + b--;
+  print(result);
+
+--a;
+--a - --b;
+--a - --b + ++b;
+--a - --b + ++b + b--;
+}
+(3)
+void main (){
+
+  var cost = 600;
+  var tickets = 5;
+  var value = cost * tickets;
+  print( " cost of buying 5 tickets to a movie is $value");
+}
+
+(4)
+void main (){
+
+  List <int> lst1 = [1,2,3,4,5,6,7];
+  List <int> lst2 = [3,5,6,7,9,10];
+  var difference = lst1.toSet().difference(lst2.toSet()).toList();
+print(difference.toString());
+}
+
+(5) Differnce between "??" and "?"
+
+
+(6)
+Number
+Strings
+Booleans
+Lists
+Maps
+
+void main(){
+int num1 = 4;
+  double num2 = 7.7;
+  var a = num1 + num2;
+  print("x = $a");
+  
+  String b = "My name";
+  String c = " is Ahmed";
+  var str = b + c;
+  print(str);
+  
+  bool ans = num1 == num2;
+  print(ans);
+  
+  List <dynamic> lst = ["Ahmed", "Age", 21];
+  print(lst);
+  
+  var peoples = {1 : "Saqlain" , 2 : "Hassan" , 3 : "Abdullah"};
+  print(peoples);
+}
+
+(7)
+void main(){
+ List <int> lst1 = [7,14,21,28,35,42,49,56,63,70];
+ List <int> lst2 = [1,2,3,4,5,6,7,8,9,10];
+  var value = Map.fromIterables(lst2,lst1) ;
+  print(value);
+}
+
+(8)
+void main(){
+
+  var originalpassword = "clown222";
+  var user = "call@222";
+  if(originalpassword == user ){
+    print("You have entered correct password");
+  }else
+  print("Please enter correct password");
+}
+
+(10)
+5 Legal variables & 5 Illegal variables.
+
+(11)
+void main(){
+String city = "Hyderabad";
+  String result = city.replaceAll("Hyder" , "Islam");
+  print(result);
+}
+
+(12)
+void main(){
+String customer_name = "Huzaifa";
+  print(customer_name);
+  String current_month = "September";
+  print(current_month);
+  int number_of_units = 456.02;
+  print(number_of_units);
+  int charges_per_unit = 12.11;
+  print(charges_per_unit);
+  var net_amount_payable = number_of_units * charges_per_unit;
+  print(net_amount_payable);
+  int late_payment_surcharge = 900.66;
+  var gross_amount_payable = net_amount_payable + late_payment_surcharge;
+  print(gross_amount_payable);
+}
+
+(13)
+void main(){
+
+ int date = 9;
+  if(date < 16){
+    print("Last days of the month");
+  }else
+    print("First fifteen days of the month");
+}
+
+(1)
+Console
+
+The sum of a and b is 8
+The substraction of a and b is -2
+The multiplication of a and b is 15
+The division of a and b is 0.6
+The quotient of a and b is 1
+The reminder of a and b is 2
+false
+true
+not greater than
+a is less than b
+not equal
+a is not equal to b
+true
+false
+8
+12
+4
+4294967287
+32768
+0
+35
+false
+true
+false
+
+(2) 
+Console
+3
+1
+1
+2
+3
+
+(3)
+Console
+cost of buying 5 tickets to a movie is 3000.
+
+
+(4)
+Console
+[1,2,4]
+
+(5)
+Both are conditional operators
+"??"
+expersion1 ?? expersion2
+If expersion1 is non-null returns its value else returns expression2 value.
+
+
+"?"
+condition ? expersion1 : expersion2
+It is a simple version of if-else statement. If the condition is true than expersion1 is executed else expersion2 is executed.
+
+(6)
+Console
+x = 11.7
+My name is Ahmed
+false
+[Ahmed, Age, 21]
+{1: Saqlain, 2: Hassan, 3: Abdullah}
+
+(7)
+Console
+{1: 7, 2: 14, 3: 21, 4: 28, 5: 35, 6: 42, 7: 49, 8: 56, 9: 63, 10: 70}
+
+(8)
+Console
+Please enter correct password
+
+
+(10)
+5 Legal variables
+myname = "Ahmed";
+my_name = "Ahmed";
+myName = "Ahmed";
+_my_name = "Ahmed";
+myname4 = "Ahmed";
+
+5 Illegal varibles
+my name = "Ahmed";
+my-name = "Ahmed";
+4myname = "Ahmed";
+list var myname = ["Ahmed","Saqlain"];
+list var a = myname ["Ahmed","Saqlain"];
+
+(11)
+Console
+Islamabad
+
+(12)
+Console
+Huzaifa
+September
+456.02 round off value: 456
+12.11 round off value: 12
+5472.40 round off value: 5472
+6372.06 round off value: 6372
+
+(13)
+Console
+Last days of the month
