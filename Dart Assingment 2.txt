@@ -182,6 +182,16 @@ void main(){
   print("Please enter correct password");
 }
 
+(9)
+void main(){
+var name = ["Hamza","Daniyal","Bilal"];
+  var score = [400,402,444];
+  var totalmarks = 500;
+  for(var i=0; i<name.length; i++){
+    print("${name[i]} obtaining score${score[i]} and percentage is ${score[i]*100/totalmarks}");
+  }
+
+
 (10)
 5 Legal variables & 5 Illegal variables.
 
@@ -290,6 +300,12 @@ Console
 (8)
 Console
 Please enter correct password
+
+(9)
+Console
+Hamza obtaining score400 and percentage is 80
+Daniyal obtaining score402 and percentage is 80.4
+Bilal obtaining score444 and percentage is 88.8
 
 
 (10)
