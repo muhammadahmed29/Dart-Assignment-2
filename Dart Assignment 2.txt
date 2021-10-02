@@ -143,8 +143,8 @@ Lists
 Maps
 
 void main(){
-int num1 = 4;
-  double num2 = 7.7;
+double num1 = 4.74;
+  double num2 = 56;
   var a = num1 + num2;
   print("x = $a");
   
@@ -287,7 +287,7 @@ It is a simple version of if-else statement. If the condition is true than exper
 
 (6)
 Console
-x = 11.7
+x = 60.74
 My name is Ahmed
 false
 [Ahmed, Age, 21]
